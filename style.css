@@ -1,0 +1,141 @@
+:root{
+  --bg:#7AC7E1; --card:#2ec938; --text:#0f172a; --muted:#475569;
+  --accent:#2563eb; --soft:#2EA1C9;
+}
+[data-theme="dark"]{
+  --bg:#16243F; --card:#081226; --text:#e6eef8; --muted:#9fb3d6; --accent:#60a5fa; --soft:#081226;
+}
+*{
+    box-sizing:border-box
+}
+body{
+    margin:0;
+    font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background:var(--bg);
+    color:var(--text);
+}
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 24px;
+    border-bottom:2px solid rgba(0,0,0,0.05);
+    background:transparent
+    
+}
+.brand{
+    font-weight:700;
+font-size: larger;
+}
+.brand span{
+    color:var(--accent)
+}
+.links a{
+    margin:0 8px;
+    text-decoration:none;
+    color:var(--muted)
+
+}
+.links a:hover{
+    color: #0f172a;
+    text-decoration: underline;
+}
+.toggle{
+    margin-left:12px;
+    padding:6px 10px;
+    border-radius:8px;
+    border:1px solid rgba(0,0,0,0.06);
+    background:var(--card);
+    cursor:pointer
+}
+.container{
+    max-width:1000px;
+    margin:28px auto;
+    padding:0 18px
+}
+.hero{
+    display:flex;
+    gap:18px;
+    align-items:center;
+    margin-bottom:18px
+}
+.avatar{
+    width:240px;
+    height:240px;
+    border-radius:50%;
+    border:50px double var(--soft)
+}
+.intro h1{
+    margin:0 0 8px;
+    font-size: 50px;
+}
+.intro p{
+    margin-left: 15px;
+}
+.card{
+    background:var(--card);
+    border-radius:12px;padding:12px;
+    margin:14px 0;
+    box-shadow:0 20px 20px rgba(226, 227, 232, 0.06)
+}
+.p-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:12px
+}
+.p img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+    border-radius:8px
+}
+.gallery-grid{
+    display:flex;
+    gap:11px;
+    flex-wrap:wrap
+}
+.gallery-grid img{
+    width:210px;
+    height:130px;
+    object-fit:cover;
+    border-radius:8px;
+    cursor:pointer;
+    border:1px solid rgba(255,255,255,0.03)
+}
+.foot{
+    text-align:center;
+    padding:22px;
+    color:var(--muted)
+}
+.hobby_container {
+    
+  display:flex;
+     margin-left: 80px;  
+  gap: 60px;  
+  flex-wrap: wrap;         
+ 
+}
+
+.hobby-list { 
+  padding:10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+                
+}
+
+
+
+@media(max-width:640px){
+     .p-grid{
+        grid-template-columns:1fr
+    } 
+    .gallery-grid img{
+        width:48%;height:100px
+    } 
+    .hobby_container{
+        padding: 0;
+        margin: 40px;
+        gap: 0;
+    }
+
+}

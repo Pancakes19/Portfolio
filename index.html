@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="nav">
+            <div class="brand">Quinton <span>Khuwiseb</span></div>
+            <nav class="links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <button id="toggle" class="toggle" aria-label="Toggle theme">🌗</button>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="hero">
+                <img class="avatar" src="izowa.png" alt="Profile picture">
+                <div class="intro">
+                    <h1>Hi,  I'm Quinton</h1>
+                    <p>Web Developer |  Tech Ethicist  |  App Developer</p>                    
+                </div>
+            </section>
+            <section id="about" class="card">
+                <h2>About</h2>
+                <p>Hello! I'm a passionate web developer with expertise in creating beautiful,  functional, and responsive websites.
+                    I love solving problems and crafting digital experiences that make a difference. I am currently a Software Development Student at the Namibian University of Science and Technology.
+                </p>
+            </section>
+
+            <section id="hobbies" class="card">
+                    <div class="hobby_container">
+                        <div class="hobby-list"> 
+                            <h2>Hobbies</h2>
+                                <ul>
+                                    <li>laughing at dumb stuff</li>
+                                    <li>watching TV</li>
+                                    <li>Reverse engineering gadgets for fun</li>
+                                </ul>
+                        </div>
+                        <div class="hobby-list">
+                            <h2>Skills</h2>
+                                <ul>
+                                    <li>Frontend Development</li>
+                                    <li>Web Development</li>
+                                    <li>Ethical Hacking</li>
+                                </ul>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="projects" class="card">
+                <h2>Projects</h2>
+                <div class="p-grid">
+                <div class="p"><img src="AnimeVS.png" alt=""><h3>AnimeVS</h3></div>
+                <div class="p"><img src="AnimeTracker.png" alt=""><h3>Anime Tracker</h3></div>
+                <div class="p"><img src="Contacts.png" alt=""><h3>Phone Book System</h3></div>
+                <div class="p"><img src="assets/proj4.svg" alt=""><h3>Infra</h3></div>
+                </div>
+            </section>
+
+            <section id="gallery" class="card">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                <img src="crook.jpg" alt="g1"><img src="WhatsApp Image 2024-12-03 at 22.38.01_00bc7f2f.jpg" alt="g2"><img src="pycon1.jpg" alt="g3"><img src="pycon2.jpg" alt="g4">
+                </div>
+            </section>
+
+            <footer class="foot"> 
+                
+                ©<span id="yr"></span> Quinton — Built professionally.
+            </footer>
+            <script src="script.js"></script>
+        </main>
+    </body>
+</html>
