@@ -1,9 +1,9 @@
 :root{
   --bg:#7AC7E1; --card:#2EA1C9; --text:#0f172a; --muted:#475569;
-  --accent:#2563eb; --soft:#2EA1C9;
+  --accent:#2563eb; --soft:#2EA1C9; --foot:#2EA1C9;
 }
 [data-theme="dark"]{
-  --bg:#16243F; --card:#081226; --text:#e6eef8; --muted:#9fb3d6; --accent:#60a5fa; --soft:#081226;
+  --bg:#16243F; --card:#081226; --text:#e6eef8; --muted:#9fb3d6; --accent:#60a5fa; --soft:#081226; --foot:#081226;
 }
 *{
     box-sizing:border-box
@@ -63,7 +63,7 @@ font-size: larger;
     width:240px;
     height:240px;
     border-radius:50%;
-    border:50px double var(--soft)
+    border:40px double var(--soft)
 }
 .intro h1{
     margin:0 0 8px;
@@ -100,7 +100,7 @@ font-size: larger;
     object-fit:cover;
     border-radius:8px;
     cursor:pointer;
-    border:1px solid rgba(255,255,255,0.03)
+    border:3px solid rgba(255,255,255,0.03)
 }
 .foot{
     text-align:center;
@@ -139,3 +139,9 @@ font-size: larger;
     }
 
 }
+.foot {
+     border-radius: 8px;
+  background-color: var(--foot);
+  color: var(--text);
+}
+
