@@ -2,13 +2,16 @@
 <html lang="en" data-theme="light">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>My Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="shared.css">
     </head>
     <body>
+        
         <header class="nav">
+        
             <div class="brand">Quinton <span>Khuwiseb</span></div>
+            <script src="finisher-header.es5.min.js" type="text/javascript"></script>
             <nav class="links">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -17,20 +20,23 @@
                 <button id="toggle" class="toggle" aria-label="Toggle theme">🌗</button>
             </nav>
         </header>
-
         <main class="container">
+            
+
             <section class="hero">
-                <img class="avatar" src="izowa.png" alt="Profile picture">
+                <img class="avatar" src="images/izowa.png" alt="Profile picture">
                 <div class="intro">
                     <h1>Hi,  I'm Quinton</h1>
                     <p>Web Developer |  Tech Ethicist  |  App Developer</p>                    
                 </div>
             </section>
-            <section id="about" class="card">
-                <h2>About</h2>
-                <p>Hello! I'm a passionate web developer with expertise in creating beautiful,  functional, and responsive websites.
-                    I love solving problems and crafting digital experiences that make a difference. I am currently a Software Development Student at the Namibian University of Science and Technology.
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hello! I'm a passionate web developer with expertise in creating beautiful, <br>  functional, and responsive websites.
+                    I love solving problems and crafting <br> digital experiences that make a difference. I am currently a Software <br> Development Student at the Namibian University of Science and Technology.
                 </p>
+                <button id="resume-btn" class="abt-btn">Download CV</button>
+                <button id="wa-me-btn" class="abt-btn">WhatsApp me</button>
             </section>
 
             <section id="hobbies" class="card">
@@ -57,27 +63,30 @@
             <section id="projects" class="card">
                 <h2>Projects</h2>
                 <div class="p-grid">
-                <div class="p"><img src="AnimeVS.png" alt=""><h3>AnimeVS</h3></div>
-                <div class="p"><img src="AnimeTracker.png" alt=""><h3>Anime Tracker</h3></div>
-                <div class="p"><img src="Contacts.png" alt=""><h3>Phone Book System</h3></div>
-                <div class="p"><img src="image.png" alt=""><h3>Tetris</h3></div>
+                <div class="p"><img src="images/AnimeVS.png" alt=""><h3>AnimeVS</h3></div>
+                <div class="p"><img src="images/AnimeTracker.png" alt=""><h3>Anime Tracker</h3></div>
+                <div class="p"><img src="images/Contacts.png" alt=""><h3>Phone Book System</h3></div>
+                <div class="p"><img src="images/image.png" alt=""><h3>Tetris</h3></div>
                 </div>
             </section>
 
             <section id="gallery" class="card">
                 <h2>Gallery</h2>
                 <div class="gallery-grid">
-                <img src="wanda.png" alt="g1"><img src="WhatsApp Image 2024-12-03 at 22.38.01_00bc7f2f.jpg" alt="g2"><img src="pycon1.jpg" alt="g3"><img src="pycon2.jpg" alt="g4">
+                <img src="images/wanda.png" alt="g1"><img src="images/me.jpg" alt="g2"><img src="images/pycon1.jpg" alt="g3"><img src="images/pycon2.jpg" alt="g4">
                 </div>
             </section>
 
             <footer class="foot"> 
+                <a href="mailto:khuwsiebqgmail.com">Email me here</a> <br>
                 <a href="https://github.com/Pancakes19">This is my Github</a> <br>
                 <a href="https://www.linkedin.com/in/quinton-khuwiseb-b85b432a2/">This is my LinkedIn Profile</a> <br>
+                
 
                 ©<span id="yr"></span> Quinton — Built professionally.
             </footer>
             <script src="script.js"></script>
         </main>
+        
     </body>
 </html>
