@@ -1,19 +1,34 @@
 :root{
-  --bg:#7AC7E1; 
-  --card:#2EA1C9; 
-  --text:#0f172a; 
-  --muted:#475569;
-  --Ncolor:#2563eb; 
-  --soft:#2EA1C9; 
-  --foot:#2EA1C9;
+  --bg:#16243F; 
+  --card:#081226; 
+  --text:#e6eef8; 
+  --muted:#9fb3d6;
+  --Ncolor:#60a5fa; 
+  --soft:#081226C9; 
+  --foot:#081226;
   --transition: all 0.3s ease;
 }
 [data-theme="dark"]{
-  --bg:#16243F; --card:#081226; --text:#e6eef8; --muted:#9fb3d6; --Ncolor:#60a5fa; --soft:#081226; --foot:#081226;
+  --bg: #7ac7e1; 
+  --card:#2EA1C9; 
+  --text:#0f172a; 
+  --muted:#475569; 
+  --Ncolor:#2563ab; 
+  --soft:#2EA1c9; 
+  --foot:#2EA1C9;
 }
 *{
     box-sizing:border-box
 }
+
+#matrix{
+  position: fixed; inset: 0;
+  z-index: -1;
+  filter: blur(0.6px) opacity(0.8) saturate(1.2);
+  background: radial-gradient(1200px 600px at 70% 10%, rgba(0,255,209,.12), transparent 60%),
+              radial-gradient(800px 400px at 20% 80%, rgba(134,168,231,.15), transparent 60%);
+}
+
 body{
     margin:0;
     font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -44,13 +59,14 @@ font-size: larger;
 }
 .links a:hover{
     color: #0f172a;
-    text-decoration: underline;
+    transition: var(--transition);
+    letter-spacing: 0.3px;
 }
 .toggle{
     margin-left:12px;
     padding:6px 10px;
     border-radius:8px;
-    border:1px solid rgba(0,0,0,0.06);
+    border:4px solid rgba(0,0,0,0.06);
     background:var(--card);
     cursor:pointer
 }
@@ -67,20 +83,27 @@ font-size: larger;
 }
 
 .avatar{
-    width:240px;
-    height:240px;
+    width:300px;
+    height:300px;
     border-radius:50%;
-    border:40px double var(--soft)
+    border:20px double var(--soft)
 }
 
 .intro h1{
     margin:0 0 8px;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .intro p{
     margin-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 70px;
 }
+#about p{
+    font-size: 22px;
+}
+
 .abt-btn{
     width: 200px;
     height: 50px;
@@ -89,11 +112,100 @@ font-size: larger;
     color: var(--text);
     font-size: 20px;
     transition: var(--transition);
-   
-}
+    border-style: hidden;
+    
+    
+    }
+    
 .abt-btn:hover{
+    background: var(--text);
+    color: var(--card);
    transform: translateY(-6px);
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+    margin-top: 12px;
+}
+
+.panel{
+    background-color:rgb(from var(--card) r g b / 0.6); 
+    border:1px solid var(--stroke); 
+    border-radius:18px; 
+    padding:18px; 
+    margin-top:18px; 
+    box-shadow: 0 10px 24px rgba(0,0,0,.2);
+    
+}
+
+.tools .btn{
+    margin-top: 5px;
+}
+
+.card_project{
+    border:2px solid var(--bg);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: var(--transition);
+    background: linear-gradient(180deg, color-mix(in oklab,var(--card),transparent 10%), var(--card));
+    
+}
+
+.card_project:hover{
+    transform: scaleX(2) scaleY(2);
+}
+
+.card_project img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.card_project h3{
+    margin: 10px 12px 0;
+}
+
+.card_project p{
+    margin: 6px 12px 12px;
+    color: var(--text);
+}
+
+.card_project .actions{
+    display: flex;
+    gap: 8px;
+    padding: 0 12px 12px;
+}
+
+.btn{
+    border:2px solid var(--bg);
+    background: var(--card);
+    color: var(--text);
+    padding: 10px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--text);
+    color: var(--card);
+    transform: translateY(-3px);
+}
+
+.btn.tiny{
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: .9rem;
+}
+
+
 
 .card{
     background:var(--card);
@@ -103,18 +215,6 @@ font-size: larger;
     box-shadow:0 20px 20px rgba(226, 227, 232, 0.06)
 }
 
-.p-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:12px
-}
-
-.p img{
-    width:100%;
-    height:140px;
-    object-fit:cover;
-    border-radius:8px
-}
 
 .gallery-grid{
     display:flex;
@@ -137,37 +237,13 @@ font-size: larger;
     color:var(--muted)
 }
 
-.hobby_container {
-    display:flex;
-    
-     margin-left: 80px;  
-    gap: 60px;  
-    flex-wrap: wrap;         
- 
-}
-
-.hobby-list { 
-  padding:10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
-  width: 200px;
-                
-}
-
-
 
 @media(max-width:640px){
-     .p-grid{
-        grid-template-columns:1fr
-        } 
+
     .gallery-grid img{
         width:48%;height:100px
         } 
-    .hobby_container{
-        padding: 0;
-        margin: 40px;
-        gap: 0;
-        }
+
 
 }
 .foot {

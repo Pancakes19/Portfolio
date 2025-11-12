@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>My Portfolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
         <link rel="stylesheet" href="shared.css">
     </head>
     <body>
-        
+        <canvas id="matrix"></canvas>
         <header class="nav">
         
             <div class="brand">Quinton <span>Khuwiseb</span></div>
@@ -38,46 +39,74 @@
                 <button id="resume-btn" class="abt-btn">Download CV</button>
                 <button id="wa-me-btn" class="abt-btn">WhatsApp me</button>
             </section>
+<br> 
 
-            <section id="hobbies" class="card">
-                    <div class="hobby_container">
-                        <div class="hobby-list"> 
-                            <h2>Hobbies</h2>
-                                <ul>
-                                    <li>laughing at dumb stuff</li>
-                                    <li>watching TV</li>
-                                    <li>Reverse engineering gadgets for fun</li>
-                                </ul>
-                        </div>
-                        <div class="hobby-list">
-                            <h2>Skills</h2>
-                                <ul>
-                                    <li>Frontend + Backend Development       </li>
-                                    <li>Web Development</li>
-                                    <li>Ethical Hacking</li>
-                                </ul>
-                        </div>
-                    </div>
+            <section class="tools">
+                <div class="panel">
+                    
+                    <h2>Tech tools I'm familiar with,</h2>
+                    <a href="" class="btn tiny "><i class="devicon-java-plain colored"></i>Java</a>
+                    <a href="" class="btn tiny "><i class="devicon-python-plain colored"></i>Python</a>
+                    <a href="" class="btn tiny "><i class="devicon-html5-plain colored"></i>HTML</a>
+                    <a href="" class="btn tiny "><i class="devicon-css3-plain colored"></i>CSS</a>
+                    <a href="" class="btn tiny "><i class="devicon-javascript-plain colored"></i>JavaScript</a>
+                    <a href="" class="btn tiny "><i class="devicon-php-plain colored"></i>PHP</a>
+                    <a href="" class="btn tiny "><i class="devicon-ballerina-plain colored"></i>Ballerina</a>
+                    <a href="" class="btn tiny "><i class="devicon-github-original colored"></i>Github</a>
+                    <a href="" class="btn tiny "><i class="devicon-git-plain colored"></i>Git</a>
+                    <a href="" class="btn tiny "><i class="devicon-docker-plain colored"></i>Docker</a>
+                    <a href="" class="btn tiny "><i class="devicon-bootstrap-plain colored"></i>Bootstrap</a>
+                    <a href="" class="btn tiny "><i class="devicon-mysql-plain colored"></i>MySQL</a>
+                    <a href="" class="btn tiny "><i class="devicon-react-original colored"></i>React</a>
+                    <a href="" class="btn tiny "><i class="devicon-figma-plain colored"></i>Figma</a>
+                    <a href="" class="btn tiny "><i class="devicon-canva-original colored"></i>Canva</a>
+                </div>
             </section>
-
-            <section id="projects" class="card">
+            
+<br>
+            <section id="projects" class="panel">
                 <h2>Projects</h2>
-                <div class="p-grid">
-                <div class="p"><img src="images/AnimeVS.png" alt=""><h3>AnimeVS</h3></div>
-                <div class="p"><img src="images/AnimeTracker.png" alt=""><h3>Anime Tracker</h3></div>
-                <div class="p"><img src="images/Contacts.png" alt=""><h3>Phone Book System</h3></div>
-                <div class="p"><img src="images/image.png" alt=""><h3>Tetris</h3></div>
+                <div class="grid">
+                    <article class="card_project" data-tags="front">
+                        <img src="assets/AnimeBlog.png" alt="Grid 1"><h3>Anime Blog</h3>
+                        <p>Blog site with various categories   </p>
+                        <div class="actions"><a class="btn tiny" href="#">Live</a><a class="btn tiny " href="#">Code</a></div>
+                    </article>
+                
+                    <article class="card_project" data-tags="front">
+                        <img src="assets/grid" alt="Grid 1"><h3>Landing Builder</h3>
+                        <p>Composable sections with drag‑and‑drop.</p>
+                        <div class="actions"><a class="btn tiny" href="#">Live</a><a class="btn tiny outline" href="#">Code</a></div>
+                    </article>
+            
+                    <article class="card_project" data-tags="front">
+                        <img src="assets/grid3.svg" alt="Grid 1"><h3>Landing Builder</h3>
+                        <p>Composable sections with drag‑and‑drop.</p>
+                        <div class="actions"><a class="btn tiny" href="#">Live</a><a class="btn tiny outline" href="#">Code</a></div>
+                    </article>
+                
+                    <article class="card_project" data-tags="front">
+                        <img src="assets/grid4.svg" alt="Grid 1"><h3>Landing Builder</h3>
+                        <p>Composable sections with drag‑and‑drop.</p>
+                        <div class="actions"><a class="btn tiny" href="#">Live</a><a class="btn tiny outline" href="#">Code</a></div>
+                    </article>
+                
+                    <article class="card_project" data-tags="front">
+                        <img src="assets/grid1.svg" alt="Grid 1"><h3>Landing Builder</h3>
+                        <p>Composable sections with drag‑and‑drop.</p>
+                        <div class="actions"><a class="btn tiny" href="#">Live</a><a class="btn tiny outline" href="#">Code</a></div>
+                    </article>
                 </div>
             </section>
 
-            <section id="gallery" class="card">
+            <section id="gallery" class="panel">
                 <h2>Gallery</h2>
                 <div class="gallery-grid">
                 <img src="images/wanda.png" alt="g1"><img src="images/me.jpg" alt="g2"><img src="images/pycon1.jpg" alt="g3"><img src="images/pycon2.jpg" alt="g4">
                 </div>
             </section>
 
-            <footer class="foot"> 
+            <footer class="panel"> 
                 <a href="mailto:khuwsiebqgmail.com">Email me here</a> <br>
                 <a href="https://github.com/Pancakes19">This is my Github</a> <br>
                 <a href="https://www.linkedin.com/in/quinton-khuwiseb-b85b432a2/">This is my LinkedIn Profile</a> <br>
