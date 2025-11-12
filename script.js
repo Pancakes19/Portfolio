@@ -37,7 +37,7 @@ function draw(){
   for(let i=0;i<y.length;i++){
     const text = String.fromCharCode(0x30A0 + Math.random()*96);
     ctx.fillText(text, i*20, y[i]);
-    if(y[i] > canvas.height + Math.random()*100) y[i]=0;
+    if(y[i] > canvas.height + Math.random()*10000) y[i]=0;
     y[i]+=20;
   }
   requestAnimationFrame(draw);
