@@ -6,7 +6,7 @@
   --Ncolor:#60a5fa; 
   --soft:#081226C9; 
   --foot:#081226;
-  --transition: all 0.3s ease;
+  --transition: all 0.3s ease-out;
 }
 [data-theme="dark"]{
   --bg: #7ac7e1; 
@@ -154,7 +154,7 @@ font-size: larger;
 }
 
 .card_project:hover{
-    transform: scaleX(2) scaleY(2);
+    transform: scaleX(1.5) scaleY(1.5);
 }
 
 .card_project img{
@@ -275,6 +275,8 @@ font-size: larger;
 .footer__socials a:hover{
     background: var(--text);
     color: var(--card);
+    transition: var(--transition);
+    transform: scale(1.2)
 }
 
 

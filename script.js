@@ -9,7 +9,7 @@ toggle.addEventListener('click', ()=>{
 // Download CV button
   document.getElementById("resume-btn").addEventListener("click", function() {
     window.location.href = "files/Quinton_Khuwiseb_CV.pdf";
-    window.open("_blank");
+    
   });
 
   // WhatsApp Me button
