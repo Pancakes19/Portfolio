@@ -21,6 +21,10 @@
     box-sizing:border-box
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #matrix{
   position: fixed; inset: 0;
   z-index: -1;
