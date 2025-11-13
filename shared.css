@@ -86,7 +86,13 @@ font-size: larger;
     width:300px;
     height:300px;
     border-radius:50%;
-    border:20px double var(--soft)
+    border:20px double var(--soft);
+    filter: saturate(1);
+}
+
+.avatar:hover{
+  transition: var(--transition);
+  filter: saturate(0);
 }
 
 .intro h1{
