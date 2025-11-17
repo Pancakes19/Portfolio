@@ -8,7 +8,7 @@ toggle.addEventListener('click', ()=>{
 
 // Download CV button
   document.getElementById("resume-btn").addEventListener("click", function() {
-    window.location.href = "files/Quinton_Khuwiseb_CV.pdf";
+    window.location.href = "../Quinton's CV.pdf";
     
   });
 

@@ -59,8 +59,10 @@ section {
 .brand{
     font-weight:700;
 font-size: larger;
+
 }
 .brand span{
+  text-decoration: none;
     color:var(--Ncolor)
 }
 .links a{
@@ -70,7 +72,7 @@ font-size: larger;
 
 }
 .links a:hover{
-    color: #0f172a;
+    color: var(--text);
     transition: var(--transition);
     letter-spacing: 0.3px;
 }
