@@ -44,6 +44,27 @@ function draw(){
 }
 draw();
 
+const navItems = document.querySelector('.nav__items');
+const openNavBtn = document.querySelector('#open__nav-btn');
+const closeNavBtn = document.querySelector('#close__nav-btn');
+
+//opens nav menu on small screens
+const openNav = () => {
+    navItems.style.display = 'flex';
+    openNavBtn.style.display = 'none';
+    closeNavBtn.style.display = 'inline-block';
+}
+//close nav menu on small screens
+const closeNav = () => {
+    navItems.style.display = 'none';
+    openNavBtn.style.display = 'inline-block';
+    closeNavBtn.style.display = 'none';
+}
+
+openNavBtn.addEventListener('click', openNav);
+closeNavBtn.addEventListener('click', closeNav);
+
+
 //smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
