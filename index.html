@@ -8,7 +8,6 @@
         <meta name="author" content="Quinton Khuwiseb" />
         <meta name="keywords" content="Quinton Khuwiseb, web developer, cybersecurity, data science, Namibia portfolio" />
         <meta name="google-site-verification" content="2aTI0oUsClN1qAcHt8vqKpyGolgqLOme26IxBDqRpJM" />
-        <meta name="google-site-verification" content="2aTI0oUsClN1qAcHt8vqKpyGolgqLOme26IxBDqRpJM" />
         <!-- Open Graph / Social Media -->
         <meta property="og:title" content="Quinton Khuwiseb | Portfolio" />
         <meta property="og:description" content="A showcase of my web development, cybersecurity, and data science projects." />
@@ -16,36 +15,35 @@
         <meta property="og:url" content="https://pancakes19.github.io/Portfolio/" />
         <meta property="og:site_name" content="Quinton Khuwiseb Portfolio" />
         <meta property="og:image" content="https://pancakes19.github.io/Portfolio/path-to-your-image.png" />
-
         <!--====================SEO stuff================-->
 
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-        <link rel="stylesheet" href="shared.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <canvas id="matrix"></canvas>
         <!--=========================nav======================================-->
         <header class="nav">
-        
             <div class="brand"> Quinton <span>Khuwiseb</span></div>
-            <script src="finisher-header.es5.min.js" type="text/javascript"></script>
-            <nav class="links">
-                <ul class="nav__items">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certificates</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#footer">Contact</a></li>
-                <li><button id="toggle" class="toggle" aria-label="Toggle theme">🌗</button></li>
-                </ul>
+            
+            <!-- FIXED: Moved manu buttons OUTSIDE of nav.links -->
+            <div class="manu">
                 <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
                 <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+            </div>
             
-        </nav>
+            <nav class="links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certificates</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#footer">Contact</a>
+                <button id="toggle" class="toggle" aria-label="Toggle theme">🌗</button>
+            </nav>
         </header>
+        
         <main class="container">
-            
 <!--============================hero section========================================-->
             <section class="hero">
                 <img class="avatar" src="images/also_me.jpg" alt="Profile picture">
@@ -54,6 +52,7 @@
                     <p>Web Developer |  Tech Ethicist  |  App Developer</p>                    
                 </div>
             </section>
+            
             <section id="about">
                 <h2>About Me</h2>
                 <p>Hello! I'm a passionate web developer with expertise in creating beautiful, <br>  functional, and responsive websites.
@@ -66,9 +65,7 @@
 <!--===============================tech stack==============================================-->
             <section class="tools">
                 <div class="panel">
-                    
                     <h2>Tech tools I'm familiar with,</h2>
-                    <!--<p>Over the years, I've worked with a variety of resources. Here are some of the resources I have experience with:</p>-->
                     <a href="" class="btn tiny "><i class="devicon-java-plain colored"></i>Java</a>
                     <a href="" class="btn tiny "><i class="devicon-python-plain colored"></i>Python</a>
                     <a href="" class="btn tiny "><i class="devicon-html5-plain colored"></i>HTML</a>
@@ -132,52 +129,35 @@
                     <article class="card_cert" data-tags="front">
                         <img src="images/Cyber.png" alt="Grid 1"><h3>Introduction to Cybersecurity</h3>
                         <p>
-                            The Cisco Introduction to Cybersecurity course taught me the fundamentals of online security, including threats, vulnerabilities, and data protection. I also learned how cybersecurity professionals detect, prevent, and respond to digital threats in today’s connected world.
+                            The Cisco Introduction to Cybersecurity course taught me the fundamentals of online security, including threats, vulnerabilities, and data protection. I also learned how cybersecurity professionals detect, prevent, and respond to digital threats in today's connected world.
                         </p>
-                        
                     </article>
                     <article class="card_cert" data-tags="front">
-                        <img src="images/crook.png" alt="Grid 1"><h3>AI app and Web development</h3>                        </p>
+                        <img src="images/crook.png" alt="Grid 1"><h3>AI app and Web development</h3>
                         <p>
                             I learned how to design and prototype user interfaces using Figma and gained practical experience in developing and hosting web applications with Hostinger. The program enhanced my understanding of the complete web and app development process—from design to deployment.
                         </p>
                     </article>
-                    </article>
                     <article class="card_cert" data-tags="front">
-                        <img src="images/Apify certificate.jpg" alt="Grid 1"><h3>Apify </h3>                        </p>
+                        <img src="images/Apify certificate.jpg" alt="Grid 1"><h3>Apify </h3>
                         <p>
                             I learned how to create, publish, and monetize web automation tools using Apify. The workshop taught me how actorization works and how to turn automated workflows into scalable, income-generating solutions.
                         </p>
                     </article>
-                    
-                </di>
-            </section>
-
-            <section id="gallery" class="panel">
-                <h2>Gallery</h2>
-                <div class="gallery-grid">
-                <img src="images/wanda.png" alt="g1">
-                <img src="images/me.jpg" alt="g2">
-                <img src="images/pycon1.jpg" alt="g3">
+                </div>
             </section>
 
             <footer id="footer" class="panel">
-                  <div class="footer__socials">
-                        <a href="insta" target="_blank"><i class="uil uil-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/quinton-khuwiseb-b85b432a2/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
-                        <a href="https://github.com/Pancakes19" target="_blank"><i class="uil uil-github-alt"></i></a>
-                        <a href="mailto:khuwisebquinton@gmail.com"><i class="uil uil-envelope"></i></a>
-                    </div> 
-                   
-                   
-                 <br>
-                
-                
-
+                <div class="footer__socials">
+                    <a href="insta" target="_blank"><i class="uil uil-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/quinton-khuwiseb-b85b432a2/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                    <a href="https://github.com/Pancakes19" target="_blank"><i class="uil uil-github-alt"></i></a>
+                    <a href="mailto:khuwisebquinton@gmail.com"><i class="uil uil-envelope"></i></a>
+                </div> 
+                <br>
                 <span id="yr"></span> 
             </footer>
-            <script src="script.js"></script>
         </main>
-        
+        <script src="script.js"></script>
     </body>
 </html>
