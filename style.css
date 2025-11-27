@@ -278,16 +278,8 @@ font-size: larger;
 
 
 
-.foot{
-    text-align:center;
-    padding:22px;
-    color:var(--muted)
-}
-
-.foot {
-     border-radius: 8px;
-  background-color: var(--foot);
-  color: var(--text);
+#yr{
+  text-align: center;
 }
 
 .footer__socials{
@@ -425,6 +417,11 @@ font-size: larger;
     height: 40px;
     margin-top: 1rem;
   }
+
+  .kafka-light {
+    filter: invert(1) brightness(2);
+  }
+
   .grid {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -453,4 +450,5 @@ font-size: larger;
     padding: 8vw;
     font-size: 0.9em;
   }
+
 }
