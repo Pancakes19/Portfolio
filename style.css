@@ -282,10 +282,13 @@ font-size: larger;
 }
 
 
-
+.footer{
+	padding:1rem 1rem;
+	background-color:rgb(from var(--card) r g b / 0.6);
+}
 
 .yr{
-	margin-left:40% ;
+	margin-inline:40% ;
 }
 
 .footer__socials{
