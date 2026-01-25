@@ -166,6 +166,12 @@ font-size: larger;
     gap: 14px;
     margin-top: 12px;
 }
+.cert_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+    margin-top: 12px;
+}
 
 .tools{
 	display:flex;
