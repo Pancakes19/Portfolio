@@ -301,15 +301,15 @@ font-size: larger;
     align-items: center;
 }
 
-.footer__socials a{
-    background: var(--card);
-    border-radius: 50%;
-    width: 4.3rem;
-    height: 4.3rem;
+ .footer__socials a{
+	 border-radius:12px;
+	 width:80px;
+	 color:var(--text);
+	 text-decoration:none;
     display: flex;
     align-items: center ;
     justify-content: center;
-}
+} 
 
 .footer__socials a:hover{
     background: var(--text);
