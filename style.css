@@ -162,7 +162,7 @@ font-size: larger;
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
     gap: 14px;
     margin-top: 12px;
 }
@@ -284,7 +284,13 @@ font-size: larger;
     font-size: .9rem;
 }
 
+.btn.prg{
+	height:50px;
+	width:70px;
+	font-size: 1.3rem;
+    align-content: center;
 
+}
 
 .card{
     background:var(--card);
