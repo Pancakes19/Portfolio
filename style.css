@@ -235,11 +235,13 @@ font-size: larger;
 
 .card_project h3{
     margin: 10px 12px 0;
+	font-size:30px;
 }
 
 .card_project p{
     margin: 6px 12px 12px;
     color: var(--text);
+	font-size:20px;
 }
 .card_cert h3{
     margin: 10px 12px 0;
