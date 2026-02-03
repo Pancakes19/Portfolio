@@ -284,12 +284,13 @@ font-size: larger;
 
 
 .footer{
+	display:grid;
 	padding:1rem 1rem;
 	background-color:rgb(from var(--card) r g b / 0.6);
 }
 
 .yr{
-	margin-left:40% ;
+	text-align: center;
 }
 
 .footer__socials{
@@ -303,10 +304,10 @@ font-size: larger;
 }
 
  .footer__socials a{
-	 border-radius:12px;
-	 width:80px;
-	 color:var(--text);
-	 text-decoration:none;
+	border-radius:12px;
+	width:80px;
+	color:var(--text);
+	text-decoration:none;
     display: flex;
     align-items: center ;
     justify-content: center;
