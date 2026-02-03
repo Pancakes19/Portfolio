@@ -168,12 +168,13 @@ font-size: larger;
 }
 
 .tools{
-	display:flex;
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	gap:10px;
 }
 
 .panel{
-	flex:1;
+	grid:1;
     background-color:rgb(from var(--card) r g b / 0.6); 
     border:1px solid var(--stroke); 
     border-radius:18px; 
@@ -436,15 +437,13 @@ font-size: larger;
     gap: 12px;
     margin-top: 8px;
   }
-  .gallery-grid {
-    flex-direction: column;
+  
+  .tools{
+	grid-template-columns: 1fr;
     gap: 12px;
+    margin-top: 8px;
   }
-  .gallery-grid img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 8px;
-  }
+
   .card_project img {
     height: 110px;
   }
