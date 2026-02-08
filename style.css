@@ -394,6 +394,34 @@ font-size: larger;
 }
 
 @media (max-width: 640px) {
+	
+	/* Mobile adjustments for Service Cards */
+@media (max-width: 640px) {
+    .card_minimal {
+        padding: 20px; /* Reduced padding gives text more room */
+        align-items: center; /* Center content for better mobile balance */
+        text-align: center;
+    }
+
+    .service-icon-large svg {
+        width: 48px;  /* Slightly smaller icons for small screens */
+        height: 48px;
+    }
+
+    .service-number {
+        font-size: 1.8rem; /* Smaller number so it doesn't overlap text */
+        top: 10px;
+        right: 15px;
+    }
+
+    .card_minimal h3 {
+        font-size: 1.2rem;
+    }
+
+    .card_minimal p {
+        font-size: 0.9rem;
+    }
+}
   
   /* Show hamburger menu on mobile */
   .manu {
