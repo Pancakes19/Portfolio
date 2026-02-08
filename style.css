@@ -182,6 +182,59 @@ font-size: larger;
     box-shadow: 0 10px 24px rgba(0,0,0,.2);
     
 }
+/*-------------------------------------------------------------try*/
+.card_minimal {
+    position: relative;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.03); /* Glass effect */
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+/* Subtle glow on hover */
+.card_minimal:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateY(-8px);
+    border-color: var(--Ncolor);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.service-icon-large {
+    color: var(--Ncolor);
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 8px rgba(96, 165, 250, 0.3)); /* Adds a soft glow to the icon */
+}
+
+.service-number {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    opacity: 0.07; /* Very subtle background number */
+    color: var(--text);
+    pointer-events: none;
+}
+
+.card_minimal h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+.card_minimal p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0;
+}
+/*-------------------------------------------------------------try*/
 
 .tools .btn{
     margin-top: 5px;
