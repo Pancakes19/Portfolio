@@ -1,0 +1,39 @@
+HTML
+<div class="grid cert">
+    <article class="card_minimal">
+        <span class="service-number">01</span>
+        <h3>Web Solutions</h3>
+        <p>End-to-end web development from conceptual design to deployment on cloud platforms.</p>
+    </article>
+    <article class="card_minimal">
+        <span class="service-number">02</span>
+        <h3>Backend Architecture</h3>
+        <p>Building robust server-side logic and secure APIs to power your digital products.</p>
+    </article>
+</div>
+
+
+CSS
+.card_minimal {
+    position: relative;
+    padding: 40px 20px 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-number {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: 800;
+    opacity: 0.1;
+    color: var(--Ncolor);
+}
+
+.card_minimal h3 {
+    color: var(--Ncolor);
+    margin-bottom: 10px;
+}
