@@ -268,17 +268,26 @@ h2{
 
 .img_only{
   width: 35%;
+  height: auto;
 }
 .img_only img{
   width: 100%;
   border-radius: 10px;
 }
-.grid.wrapper{
+.grid.wrapper1{
     display: grid;
 }
 
-.wrapper{
+
+.wrapper1{
   display: flex;
+  gap: 20px;
+  padding: 5px;
+  align-items: center;
+}
+.wrapper2{
+  display: flex;
+  flex-direction: row-reverse;
   gap: 20px;
   padding: 5px;
   align-items: center;
@@ -486,7 +495,12 @@ hr{
 }
 
   /* responsiveness of data section */
-.wrapper{
+.wrapper1{
+  display: grid;
+  padding: 0%;
+  gap: 0;
+}
+.wrapper2{
   display: grid;
   padding: 0%;
   gap: 0;
